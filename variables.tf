@@ -14,6 +14,7 @@ locals {
     github_visibility = "public"
     github_template_owner = "conmurphy"
     github_template_repository_name = "template_aci_single_bd_single_epg"
+    github_sentinel_policy = "conmurphy/demo-sentinel-policies"
 
 }
 
