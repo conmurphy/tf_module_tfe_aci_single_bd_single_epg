@@ -52,7 +52,7 @@ variable "endpoint_groups" {
 
 resource "tfe_variable" "endpoint_groups" {
   key          = "endpoint_groups"
-  value        = "${var.endpoint_groups}"
+  value        = jsonencode(var.endpoint_groups)
   category     = "terraform"
   workspace_id = tfe_workspace.tfe_workspace.id
   hcl = true
